@@ -1,6 +1,6 @@
 {
   "name": "get-package-readme",
-  "description": "Get the GitHub readme for npm package",
+  "description": "Get the GitHub readme for an npm package",
   "version": "1.0.0",
   "author": {
     "name": "Feross Aboukhadijeh",

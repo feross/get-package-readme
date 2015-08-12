@@ -7,7 +7,7 @@
 [downloads-image]: https://img.shields.io/npm/dm/get-package-readme.svg?style=flat
 [downloads-url]: https://npmjs.org/package/get-package-readme
 
-### Get the GitHub readme for npm package
+### Get the GitHub readme for an npm package
 
 ## install
 
