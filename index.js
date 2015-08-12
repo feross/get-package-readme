@@ -3,8 +3,8 @@ module.exports = getPackageReadme
 var get = require('simple-get')
 var gh = require('github-url-to-object')
 
-var NPM_REGISTRY = 'https://registry.npmjs.org/%s/latest'
-var GITHUB_README = 'https://raw.githubusercontent.com/%s/master/README.md'
+var NPM_REGISTRY = 'https://registry.npmjs.org/%s'
+var GITHUB_README = 'https://raw.githubusercontent.com/%s'
 
 function getPackageReadme (pkgName, cb) {
   var npmUrl = NPM_REGISTRY.replace('%s', pkgName)
@@ -15,6 +15,9 @@ function getPackageReadme (pkgName, cb) {
     } catch (err) {
       return cb(new Error(pkgName + ': cannot parse registry data: ' + err.message))
     }
+    var readmeFilename = data.readmeFilename
+    if (!readmeFilename) return cb(new Error(pkgName + ': package.json has no readmeFilename'))
+
     var repoUrl = data.repository && data.repository.url
     if (!repoUrl) return cb(new Error(pkgName + ': package.json has no repository'))
 
@@ -23,7 +26,8 @@ function getPackageReadme (pkgName, cb) {
     var repo = repoObj && repoObj.repo
     if (!user || !repo) return cb(new Error(pkgName + ': cannot parse repository url'))
 
-    var githubUrl = GITHUB_README.replace('%s', user + '/' + repo)
+    var readmePath = user + '/' + repo + '/master/' + readmeFilename
+    var githubUrl = GITHUB_README.replace('%s', readmePath)
 
     get.concat(githubUrl, function (err, data) {
       if (err) return cb(err)
