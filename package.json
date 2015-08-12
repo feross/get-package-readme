@@ -1,0 +1,44 @@
+{
+  "name": "get-package-readme",
+  "description": "Get the GitHub readme for npm package",
+  "version": "0.0.0",
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "http://feross.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/feross/get-package-readme/issues"
+  },
+  "dependencies": {
+    "github-url-to-object": "^1.5.2",
+    "simple-get": "^1.4.2"
+  },
+  "devDependencies": {
+    "standard": "^5.0.0",
+    "tape": "^4.0.0"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "readme",
+    "github",
+    "package.json",
+    "fetch readme",
+    "get readme",
+    "github readme",
+    "get package readme",
+    "module readme",
+    "module",
+    "get module readme"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feross/get-package-readme.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js"
+  }
+}
