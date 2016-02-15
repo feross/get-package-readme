@@ -1,10 +1,10 @@
 # get-package-readme [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
 
-[travis-image]: https://img.shields.io/travis/feross/get-package-readme.svg?style=flat
+[travis-image]: https://img.shields.io/travis/feross/get-package-readme/master.svg
 [travis-url]: https://travis-ci.org/feross/get-package-readme
-[npm-image]: https://img.shields.io/npm/v/get-package-readme.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/get-package-readme.svg
 [npm-url]: https://npmjs.org/package/get-package-readme
-[downloads-image]: https://img.shields.io/npm/dm/get-package-readme.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/get-package-readme.svg
 [downloads-url]: https://npmjs.org/package/get-package-readme
 
 ### Get the GitHub readme for an npm package
