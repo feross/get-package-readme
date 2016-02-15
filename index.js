@@ -8,7 +8,7 @@ var GITHUB_README = 'https://raw.githubusercontent.com/%s'
 
 function getPackageReadme (pkgName, cb) {
   var npmUrl = NPM_REGISTRY.replace('%s', pkgName)
-  get.concat(npmUrl, function (err, data) {
+  get.concat(npmUrl, function (err, res, data) {
     if (err) return cb(err)
     try {
       data = JSON.parse(data.toString())
@@ -37,7 +37,7 @@ function getPackageReadme (pkgName, cb) {
     var readmePath = user + '/' + repo + '/master/' + readmeFilename
     var githubUrl = GITHUB_README.replace('%s', readmePath)
 
-    get.concat(githubUrl, function (err, data) {
+    get.concat(githubUrl, function (err, res, data) {
       if (err) return checkFallback(err)
       cb(null, data.toString())
     })
