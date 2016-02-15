@@ -15,7 +15,7 @@
     "simple-get": "^1.4.2"
   },
   "devDependencies": {
-    "standard": "^5.0.0",
+    "standard": "^6.0.5",
     "tape": "^4.0.0"
   },
   "keywords": [
