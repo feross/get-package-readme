@@ -29,7 +29,7 @@ getPackageReadme('webtorrent', function (err, readme) {
 ## why this instead of [`readme-getter`](https://www.npmjs.com/package/readme-getter)?
 
 `get-package-readme` (this package) gets an npm packages' GitHub readme (from the `master`
-branch). If you want the npm readme, you should use `readme-getter`.
+branch) and falls back to the npm readme if it exists. If you want just the npm readme, you should use `readme-getter`.
 
 ## license
 
