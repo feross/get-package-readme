@@ -2,12 +2,11 @@ var getPackageReadme = require('../')
 var test = require('tape')
 
 test('get package readme for "webtorrent"', function (t) {
-  t.plan(5)
+  t.plan(4)
   getPackageReadme('webtorrent', function (err, readme) {
     t.error(err)
     t.ok(/webtorrent/i.test(readme))
-    t.ok(/feross aboukhadijeh/i.test(readme))
-    t.ok(/streaming torrent client/i.test(readme))
+    t.ok(/torrent/i.test(readme))
     t.ok(/features/i.test(readme))
   })
 })
