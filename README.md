@@ -1,5 +1,7 @@
 # get-package-readme [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/feross/get-package-readme.svg)](https://greenkeeper.io/)
+
 [travis-image]: https://img.shields.io/travis/feross/get-package-readme/master.svg
 [travis-url]: https://travis-ci.org/feross/get-package-readme
 [npm-image]: https://img.shields.io/npm/v/get-package-readme.svg
