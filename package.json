@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "github-url-to-object": "^4.0.2",
-    "simple-get": "^2.0.0"
+    "simple-get": "^3.0.0"
   },
   "devDependencies": {
     "standard": "*",
