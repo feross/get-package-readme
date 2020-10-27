@@ -11,12 +11,12 @@
     "url": "https://github.com/feross/get-package-readme/issues"
   },
   "dependencies": {
-    "github-url-to-object": "^4.0.2",
+    "github-url-to-object": "^4.0.4",
     "simple-get": "^4.0.0"
   },
   "devDependencies": {
     "standard": "*",
-    "tape": "^5.0.0"
+    "tape": "^5.0.1"
   },
   "keywords": [
     "npm",
