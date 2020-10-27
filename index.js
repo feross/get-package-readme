@@ -1,3 +1,4 @@
+/*! get-package-readme. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 module.exports = getPackageReadme
 
 var get = require('simple-get')
